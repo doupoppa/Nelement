@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "302845501329",
-    "project_id": "nelement-bdbd2",
-    "storage_bucket": "nelement-bdbd2.appspot.com"
+    "project_number": "1015507190627",
+    "project_id": "my-element-a160f",
+    "storage_bucket": "my-element-a160f.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:302845501329:android:6bfa00a3ae0743094cc430",
+        "mobilesdk_app_id": "1:1015507190627:android:9e39407f6c238720734956",
         "android_client_info": {
           "package_name": "com.cacheskys.app"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "302845501329-nq58o82d39bis0ts345rve8vkotc1jol.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCShbRHJfSapj-zTmVEeebh-OBXPDy98s4"
+          "current_key": "AIzaSyDCY6eb52lAkHDoUGlD6TXR3V99BD09i5Y"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "302845501329-nq58o82d39bis0ts345rve8vkotc1jol.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
