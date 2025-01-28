@@ -390,6 +390,10 @@ dependencies {
     implementation libs.dagger.hilt
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation "androidx.sharetarget:sharetarget:1.2.0"
+    // 添加Firebase依赖
+    implementation platform('com.google.firebase:firebase-bom:32.7.1')
+    implementation 'com.google.firebase:firebase-messaging'
+
 
     // Flipper, debug builds only
     debugImplementation(libs.flipper.flipper) {
@@ -446,3 +450,5 @@ dependencies {
     debugImplementation libs.androidx.fragmentTestingManifest
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.10'
 }
+// 应用Firebase插件
+apply plugin: 'com.google.gms.google-services'

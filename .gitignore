@@ -12,6 +12,7 @@
 /build
 /benchmark-out
 /captures
+/vector-app/google-services.json
 .externalNativeBuild
 rust-sdk/target/*
 rust-sdk/src/uniffi/*

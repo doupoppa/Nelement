@@ -71,6 +71,7 @@ import java.util.Locale
 import java.util.concurrent.Executors
 import javax.inject.Inject
 import androidx.work.Configuration as WorkConfiguration
+import com.google.firebase.messaging.FirebaseMessaging
 
 @HiltAndroidApp
 class VectorApplication :
@@ -120,6 +121,16 @@ class VectorApplication :
     override fun onCreate() {
         enableStrictModeIfNeeded()
         super.onCreate()
+        // 添加FCM初始化代码
+        FirebaseMessaging.getInstance().token.addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                activeSession?.pushersService()?.registerPusher(
+                    token = task.result,
+                    pushKey = "fcm",
+                    appId = BuildConfig.APPLICATION_ID
+                )
+            }
+        }
         appContext = this
         flipperProxy.init(matrix)
         vectorAnalytics.init()
